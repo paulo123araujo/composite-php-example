@@ -9,6 +9,7 @@ class TrelloPlatform implements CardContract
 
     public function moveCard(Card $card): void
     {
-        // move card
+        $msg = sprintf("Movendo card no Trello -> %s", $card->title());
+        echo $msg . PHP_EOL;
     }
 }

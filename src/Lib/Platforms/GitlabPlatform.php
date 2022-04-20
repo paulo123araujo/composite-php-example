@@ -9,11 +9,13 @@ class GitlabPlatform implements MergeRequestContract, CardContract
 {
     public function createMergeRequest(MergeRequest $mergeRequest): void
     {
-        // envia para o gitlab
+        $msg = sprintf("Criando merge request no Gitlab -> %s", $mergeRequest->link());
+        echo $msg . PHP_EOL;
     }
 
     public function moveCard(Card $card): void
     {
-        // move card no gitlab
+        $msg = sprintf("Movendo card no Gitlab -> %s", $card->title());
+        echo $msg . PHP_EOL;
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Composite;
+namespace Composite\Lib\Cards;
 
 use Composite\Lib\Cards\{Card, CardContract};
 
