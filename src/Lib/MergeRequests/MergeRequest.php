@@ -12,7 +12,11 @@ class MergeRequest
 
     public static function fromArray(array $mrData): MergeRequest
     {
-        return new MergeRequest($mrData['link'], $mrData['approved'], $mrData['merged']);
+        return new MergeRequest(
+            $mrData['link'],
+            $mrData['approved'],
+            $mrData['merged']
+        );
     }
 
     public function link(): string
